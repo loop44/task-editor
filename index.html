@@ -7,7 +7,56 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main class="app">
+      <div class="container">
+        <!-- Task name -->
+        <div class="task-title">
+          <h3 class="title">Task name</h3>
+          <input type="text" />
+        </div>
+        <!-- Subtask -->
+        <div class="subtasks">
+          <div class="subtasks-title">
+            <h3 class="title">Subtasks</h3>
+            <button>+</button>
+          </div>
+          <div class="subtasks-table">
+            <div class="subtasks-colnames">
+              <p>Description</p>
+              <p>Time</p>
+              <p>Button</p>
+            </div>
+            <ul class="subtasks-rows">
+              <div>
+                <input type="text" />
+                <input type="number" />
+                <button><img src="/close.svg" alt="" /></button>
+              </div>
+            </ul>
+            <button>Save task in LocalStorage</button>
+            <button>Create new task</button>
+          </div>
+        </div>
+        <!-- Task list -->
+        <div class="task-list">
+          <h3 class="title">Task list</h3>
+          <ul>
+            <div class="task-list-item">
+              <div class="marker"></div>
+              <div class="list-item-subtasks">
+                <p>Task name</p>
+                <ul>
+                  <li>Old task - <span>0</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>Old task - <span>40</span>h</li>
+                </ul>
+              </div>
+              <button>Load</button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
