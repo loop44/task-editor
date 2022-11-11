@@ -12,29 +12,29 @@
         <!-- Task name -->
         <div class="task-title">
           <h3 class="title">Task name</h3>
-          <input type="text" />
+          <input placeholder="Enter task name..." type="text" />
         </div>
         <!-- Subtask -->
         <div class="subtasks">
           <div class="subtasks-title">
             <h3 class="title">Subtasks</h3>
-            <button>+</button>
+            <button class="rounded"><img src="/plus.svg" alt="" /></button>
           </div>
           <div class="subtasks-table">
-            <div class="subtasks-colnames">
+            <div class="table-row">
               <p>Description</p>
               <p>Time</p>
               <p>Button</p>
             </div>
-            <ul class="subtasks-rows">
+            <div class="table-row input-block">
+              <input type="text" placeholder="New subtask..." />
+              <input type="number" value="0" min="0" />
               <div>
-                <input type="text" />
-                <input type="number" />
-                <button><img src="/close.svg" alt="" /></button>
+                <button class="rounded"><img src="/close.svg" alt="" /></button>
               </div>
-            </ul>
-            <button>Save task in LocalStorage</button>
-            <button>Create new task</button>
+            </div>
+            <button class="normal">Save task in LocalStorage</button>
+            <button class="normal black">Create new task</button>
           </div>
         </div>
         <!-- Task list -->
@@ -48,10 +48,46 @@
                 <ul>
                   <li>Old task - <span>0</span>h</li>
                   <li>New task - <span>40</span>h</li>
-                  <li>Old task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
                 </ul>
               </div>
-              <button>Load</button>
+              <button class="normal">Load</button>
+            </div>
+            <div class="task-list-item">
+              <div class="marker"></div>
+              <div class="list-item-subtasks">
+                <p>Task name</p>
+                <ul>
+                  <li>Old task - <span>0</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                </ul>
+              </div>
+              <button class="normal">Load</button>
+            </div>
+            <div class="task-list-item">
+              <div class="marker"></div>
+              <div class="list-item-subtasks">
+                <p>Task name</p>
+                <ul>
+                  <li>Old task - <span>0</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                  <li>New task - <span>40</span>h</li>
+                </ul>
+              </div>
+              <button class="normal">Load</button>
             </div>
           </ul>
         </div>

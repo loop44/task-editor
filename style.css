@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@400;700;900&display=swap');
+
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Roboto', sans-serif; */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+:root {
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-secondary: 'Comfortaa', cursive;
+
+  --text-color-primary: #000;
+  --text-color-accent: #fff;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  --fs-sm: 0.813rem;
+  --fs-md: 0.938rem;
+  --fs-lg: 2.25rem;
+
+  --radius: 0.375rem;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  color: var(--text-color-primary);
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-sm);
+}
+
+.container {
+  max-width: 46.5rem;
+  margin: 0 auto;
+  padding: 3.125rem 2.5rem;
+}
+
+.title {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-lg);
+  line-height: 2.5rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 2rem;
+}
+
+input {
+  font-size: var(--fs-md);
+  width: 100%;
+  padding: 1.063rem;
+  line-height: 1.125rem;
+  border: 0.125rem solid #000000;
+  outline: none;
+}
+
+button {
+  outline: none;
+  background-color: #fff;
+  border: 0.125rem solid #000000;
+  cursor: pointer;
+}
+
+.rounded {
+  padding: 0.75rem 1.625rem 0.5rem;
+  border-radius: 1.25rem;
+}
+
+.normal {
+  font-weight: var(--fw-black);
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.04em;
+  line-height: 0.938rem;
+  padding: 1rem 0;
+  margin-bottom: 1.375rem;
+  border-radius: var(--radius);
+}
+
+.normal.black {
+  margin-bottom: 2rem;
+  background-color: #000;
+  color: var(--text-color-accent);
+}
+
+button img {
+  width: 0.813rem;
+  height: 0.813rem;
+}
+
+.task-title input {
+  margin-bottom: 2rem;
+}
+
+.subtasks-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  gap: 1.563rem;
+}
+
+.subtasks-title h3 {
+  margin-bottom: 0;
+}
+
+.subtasks-title button {
+  background-color: #000;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.input-block {
+  margin-bottom: 1.375rem;
+}
+
+.table-row p {
+  text-align: center;
+  margin-bottom: 0.625rem;
+  font-size: var(--fs-md);
+}
+
+.table-row div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-list-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.marker {
+  width: 4rem;
+  height: 4rem;
+  background-color: #000;
+  border-radius: 100%;
+}
+
+.list-item-subtasks {
+  flex-grow: 1;
+  line-height: 1.125rem;
+}
+
+.list-item-subtasks p {
+  margin-bottom: 0.375rem;
+  font-weight: var(--fw-bold);
+}
+
+.list-item-subtasks ul {
+  padding-left: 1rem;
+  list-style: disc;
+}
+
+.task-list-item button {
+  align-self: flex-end;
+  width: auto;
+  padding: 0.438rem 2.75rem;
+}
+
+/* Hide input type number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
