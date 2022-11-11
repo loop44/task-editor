@@ -121,6 +121,10 @@ button img {
   gap: 1.25rem;
 }
 
+.colnames {
+  display: none;
+}
+
 .input-block {
   margin-bottom: 1.375rem;
 }
