@@ -188,3 +188,20 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+@media (max-width: 37.5em) {
+  .table-row {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 26.25em) {
+  .marker {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .task-list-item button {
+    padding: 0.2rem 1.75rem;
+  }
+}

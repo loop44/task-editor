@@ -35,6 +35,7 @@ const loadTodoToForm = (item) => {
   taskNameInput.value = item.name;
   const tasks = item.subtasks.slice(0);
   tasks.reverse().forEach((subtask) => {
+    colnames.style.display = 'grid';
     colnames.after(createSubTask(removeSubtask, subtask));
   });
 };
