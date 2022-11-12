@@ -22,7 +22,16 @@ const removeSubtask = (e) => {
   e.currentTarget.closest('.input-block').remove();
 };
 
+const clearFormState = () => {
+  taskNameInput.value = '';
+  colnames.style.display = 'none';
+  Array.from(document.querySelectorAll('.input-block')).forEach((item) => {
+    item.remove();
+  });
+};
+
 const loadTodoToForm = (item) => {
+  clearFormState();
   taskNameInput.value = item.name;
   const tasks = item.subtasks.slice(0);
   tasks.reverse().forEach((subtask) => {
@@ -33,14 +42,6 @@ const loadTodoToForm = (item) => {
 const renderTodos = (todoItems) => {
   todoItems.forEach((item) => {
     todoList.append(createTodoItem(item, loadTodoToForm));
-  });
-};
-
-const clearFormState = () => {
-  taskNameInput.value = '';
-  colnames.style.display = 'none';
-  Array.from(document.querySelectorAll('.input-block')).forEach((item) => {
-    item.remove();
   });
 };
 
